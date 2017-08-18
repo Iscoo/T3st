@@ -15,7 +15,7 @@ function notifyMe(e, t) {
     function n() {
         var n = new Notification(t.name, {
             body: t.pay,
-            icon: "/images/crypto-icons/" + currency + ".png"
+            icon: "https://github.com/Iscoo/T3st/tree/master/crypto-icons" + currency + ".png"
         });
         n.onclick = function(i) {
             timer(e, 60 * t.time + 60), localStorage.setItem("faucet-" + t.name, Date.now()), window.open(t.link, "_blank"), n.close()
